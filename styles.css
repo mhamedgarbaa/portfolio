@@ -23,10 +23,10 @@
     /* Neutral Colors */
     --light: #f8fafc;
     --lighter: #f1f5f9;
-    --dark: #1e293b;
-    --text: #334155;
-    --text-light: #64748b;
-    --text-lighter: #94a3b8;
+    --dark: #0f172a;
+    --text: #1e293b;
+    --text-light: #475569;
+    --text-lighter: #64748b;
     --bg: #ffffff;
     --bg-secondary: #f8fafc;
     --white: #ffffff;
@@ -134,20 +134,22 @@ html {
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--bg);
-    color: var(--text);
     line-height: var(--leading-normal);
+    color: #1e293b;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Improved Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: var(--leading-tight);
-    color: var(--dark);
-    margin-bottom: var(--spacing-sm);
-    letter-spacing: -0.025em;
+    color: #0f172a;
+    margin: 0;
 }
 
 h1 { 
@@ -170,10 +172,8 @@ h4 {
 }
 
 p {
-    color: var(--text-light);
-    margin-bottom: var(--spacing-md);
-    line-height: var(--leading-relaxed);
-    max-width: 65ch; /* Optimal reading width */
+    margin: 0 0 1rem;
+    color: #334155;
 }
 
 /* Improved Link Styles */
@@ -364,10 +364,14 @@ header::before {
 }
 
 .tagline {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    font-weight: 300;
-    opacity: 0.9;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.95);
+    margin: var(--spacing-md) 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cta-buttons {
@@ -554,7 +558,9 @@ section:nth-child(even) {
 }
 
 .section-title h2 {
-    color: var(--dark);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #0f172a;
+    font-weight: 800;
     margin-bottom: var(--spacing-sm);
     position: relative;
     display: inline-block;
@@ -573,10 +579,10 @@ section:nth-child(even) {
 }
 
 .section-title p {
-    color: var(--text-light);
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    color: #475569;
+    max-width: 600px;
     margin: 0 auto;
-    margin-top: var(--spacing-md);
 }
 
 /* Professional About Section */
@@ -593,7 +599,8 @@ section:nth-child(even) {
 
 .about-text p:first-of-type {
     font-size: 1.125rem;
-    color: var(--text);
+    color: #334155;
+    font-weight: 500;
 }
 
 .about-img img {
@@ -705,6 +712,7 @@ section:nth-child(even) {
 .skill-category h3 i {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.6rem;
 }
@@ -716,9 +724,9 @@ section:nth-child(even) {
 
 .skill-name {
     margin-bottom: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
-    color: var(--dark);
+    color: #0f172a;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -847,7 +855,8 @@ section:nth-child(even) {
 }
 
 .timeline-content h3 {
-    color: var(--dark);
+    color: #0f172a;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
@@ -952,11 +961,11 @@ section:nth-child(even) {
 }
 
 .project-title {
-    color: var(--dark);
+    color: #0f172a;
     margin-bottom: 1rem;
     font-size: 1.35rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--dark), var(--primary));
+    font-weight: 800;
+    background: linear-gradient(135deg, #0f172a, var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1066,14 +1075,15 @@ section:nth-child(even) {
 }
 
 .certification-card h3 {
-    color: var(--dark);
+    color: #0f172a;
     margin-bottom: var(--spacing-md);
     font-size: 1.125rem;
+    font-weight: 700;
     line-height: var(--leading-tight);
 }
 
 .certification-card p {
-    color: var(--text-light);
+    color: #475569;
     font-size: 0.9375rem;
     line-height: var(--leading-relaxed);
     margin: 0 auto;
@@ -1126,14 +1136,15 @@ section:nth-child(even) {
 }
 
 .contact-text h3 {
-    color: var(--dark);
+    color: #0f172a;
+    font-weight: 700;
     margin-bottom: var(--spacing-xs);
     font-size: 1.125rem;
 }
 
 .contact-text a,
 .contact-text p {
-    color: var(--text-light);
+    color: #475569;
     text-decoration: none;
     font-size: 0.9375rem;
     transition: var(--transition-base);
@@ -1158,8 +1169,8 @@ section:nth-child(even) {
 .form-group label {
     display: block;
     margin-bottom: var(--spacing-xs);
-    font-weight: 600;
-    color: var(--dark);
+    font-weight: 700;
+    color: #0f172a;
     font-size: 0.9375rem;
 }
 
