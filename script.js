@@ -205,11 +205,11 @@ class Portfolio {
         if (!typewriterElement) return;
 
         const texts = [
-            'Étudiant Ingénieur en Télécommunications',
-            'Spécialiste IA & Computer Vision',
-            'Développeur Machine Learning',
-            'Expert en Computer Vision',
-            'Passionné d\'Innovation'
+            'Junior AI Engineer',
+            'Generative AI & LLM Developer',
+            'AI Agents and RAG Specialist',
+            'Machine Learning Researcher',
+            'Cloud AI Engineer'
         ];
         
         let textIndex = 0;
