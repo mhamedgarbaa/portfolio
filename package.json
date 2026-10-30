@@ -2,10 +2,10 @@
   "name": "mhamed-garbaa-portfolio",
   "version": "2.0.0",
   "description": "Enhanced portfolio website for Garbaa Mhamed - Telecommunications Engineering Student & AI Enthusiast",
-  "main": "index_enhanced.html",
+  "main": "index.html",
   "scripts": {
     "start": "npx serve . -p 3000",
-    "dev": "npx live-server --port=3000 --open=index_enhanced.html",
+    "dev": "npx live-server --port=3000 --open=index.html",
     "build": "echo 'Static site - no build required'",
     "deploy": "gh-pages -d .",
     "lint:html": "npx htmlhint *.html",
@@ -34,12 +34,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mhamedgarbaa/html-page.git"
+    "url": "https://github.com/mhamedgarbaa/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/mhamedgarbaa/html-page/issues"
+    "url": "https://github.com/mhamedgarbaa/portfolio/issues"
   },
-  "homepage": "https://mhamedgarbaa.github.io/html-page",
+  "homepage": "https://mhamedgarbaa.github.io/portfolio",
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "htmlhint": "^1.1.4",
