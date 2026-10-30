@@ -12,49 +12,67 @@
 <meta property="og:url" content="https://mhamedgarbaa.github.io/portfolio/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230C2431'/%3E%3Ccircle cx='16' cy='32' r='6' fill='%235FD6B8'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23FFB547'/%3E%3Ccircle cx='48' cy='32' r='6' fill='%2394AEBB'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230071e3'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Mhamed Garbaa","jobTitle":"AI & MLOps Engineer","url":"https://mhamedgarbaa.github.io/portfolio/","sameAs":["https://linkedin.com/in/mhamed-garbaa-646509223","https://github.com/mhamedgarbaa"],"address":{"@type":"PostalAddress","addressCountry":"Tunisia"}}
 </script>
 </head>
 <body>
-<header class="top">
-  <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Mhamed Garbaa, back to top">MG</a>
-    <nav aria-label="Sections">
-      <a href="#pipeline">Pipeline</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="theme" id="theme" type="button" aria-label="Switch color theme"><span aria-hidden="true"></span></button>
-  </div>
-</header>
 
-<main id="top">
-  <section class="hero wrap">
-    <div class="hero-text">
-      <p class="status"><span class="dot"></span>Open to MLOps and AI engineering roles</p>
-      <h1>I take language models from experiment to a service you can rerun and trust.</h1>
-      <p class="lede">Mhamed Garbaa. AI and MLOps engineer, telecommunications engineering graduate with honors. I build Python and FastAPI services, retrieval and agent pipelines, and evaluation protocols where every configuration and dataset is traceable.</p>
-      <div class="cta">
-        <a class="btn primary" href="CV_Mhamed_Garbaa.pdf" download>Download CV</a>
-        <a class="btn" href="#contact">Get in touch</a>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand">Mhamed Garbaa</a>
+    <div class="nav-links">
+      <a href="#pipeline" class="nav-pill">Pipeline</a>
+      <a href="#experience" class="nav-pill">Experience</a>
+      <a href="#projects" class="nav-pill">Projects</a>
+      <a href="#skills" class="nav-pill">Skills</a>
+      <a href="#education" class="nav-pill">Education</a>
+    </div>
+    <a href="#contact" class="btn btn-blue">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <section class="container hero">
+    <div>
+      <span class="label fade-up">AI &amp; MLOps engineer</span>
+      <h1 class="fade-up d2">I take language models from experiment to a service you can rerun and trust.</h1>
+      <p class="lede fade-up d3">Telecommunications engineering graduate with honors. I build Python and FastAPI services, retrieval and agent pipelines, and evaluation protocols where every configuration and dataset is traceable.</p>
+      <div class="cta fade-up d3">
+        <a href="CV_Mhamed_Garbaa.pdf" class="btn btn-blue" download><i class="fas fa-download" style="font-size:13px"></i>Download CV</a>
+        <a href="https://github.com/mhamedgarbaa" class="btn btn-white"><i class="fab fa-github" style="color:var(--muted)"></i>GitHub</a>
       </div>
     </div>
-    <img class="photo" src="DSC05764.jpg" alt="Portrait of Mhamed Garbaa" width="640" height="800" fetchpriority="high">
+    <img class="photo fade-up d2" src="DSC05764.jpg" alt="Portrait of Mhamed Garbaa" width="640" height="800" fetchpriority="high">
   </section>
 
-  <section class="wrap" id="pipeline">
-    <h2>How I work across the ML lifecycle</h2>
-    <p class="sub">Select a stage to see what I’ve done there. I’m focused on evaluation right now.</p>
-    <div class="pipe">
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><b style="color:var(--accent)">3</b><span>Research internships</span></div>
+      <div class="stat"><b>4</b><span>Arabic LLM benchmarks</span></div>
+      <div class="stat"><b style="color:var(--green)">6</b><span>Certifications</span></div>
+      <div class="stat"><b>4</b><span>Languages spoken</span></div>
+      <div class="stat"><b style="color:var(--red)">2</b><span>Third-place awards</span></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee">
+      <span>Python</span><span>FastAPI</span><span>PyTorch</span><span>MLflow</span><span>Docker</span><span>Jenkins</span><span>LangGraph</span><span>RAG</span><span>DPO</span><span>Neo4j</span><span>PostgreSQL</span><span>LanceDB</span><span>scikit-learn</span><span>TensorFlow</span><span>Linux</span><span>Git</span>
+    </div>
+  </div>
+
+  <section class="container" id="pipeline">
+    <span class="label">How I work</span>
+    <h2 class="headline">Across the whole ML lifecycle.</h2>
+    <div class="card lg tint">
+      <p style="margin-bottom:8px">Select a stage to see what I’ve done there. I’m focused on evaluation right now.</p>
       <div class="track" role="tablist" aria-label="ML lifecycle stages">
         <button role="tab" class="stage" data-title="Data" data-tools="Pandas, NumPy, PostgreSQL, Neo4j, LanceDB" data-text="Signal preprocessing and feature extraction for ECG classification, data preparation for a credit risk model, and a hybrid store of vectors, a knowledge graph and SQL tables behind the NeoCortex agent memory.">Data</button>
         <button role="tab" class="stage" data-title="Train" data-tools="PyTorch, TensorFlow, scikit-learn, DPO" data-text="Preference-pair preparation and DPO adaptation of a Fanar checkpoint, plus scikit-learn pipelines for ECG signals and credit scoring.">Train</button>
@@ -64,137 +82,177 @@
         <button role="tab" class="stage" data-title="Automate" data-tools="Jenkins, CI/CD, Azure" data-text="Certified in Jenkins CI/CD and Machine Learning in Production (DeepLearning.AI), with Azure Fundamentals and Azure AI Fundamentals. I’m looking to apply this on a production team.">Automate</button>
       </div>
       <div class="panel" role="tabpanel" aria-live="polite">
-        <h3 id="p-title"></h3>
+        <h4 id="p-title"></h4>
         <p id="p-text"></p>
         <p class="tools" id="p-tools"></p>
       </div>
     </div>
   </section>
 
-  <section class="wrap" id="experience">
-    <h2>Experience</h2>
-    <ol class="runs">
-      <li>
-        <p class="when">Sept. 2026 to now</p>
-        <div>
-          <h3>AI researcher, cultural alignment of Fanar LLMs</h3>
-          <p class="state on">Ongoing research</p>
-          <ul>
-            <li>Contributing to a scientific article: literature review and evaluation of Arabic-language models on ACVA, AraTrust, ArabicMMLU and EXAMS Arabic.</li>
-            <li>Building a reproducible Python workflow to diagnose alignment gaps, prepare preference pairs and apply DPO to a Fanar checkpoint.</li>
-            <li>Defining a before/after DPO protocol that tracks cultural alignment, general capability retention, and every configuration and dataset.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <p class="when">Feb. to June 2026</p>
-        <div>
-          <h3>AI engineering intern, Talan Tunisia</h3>
-          <p class="state">Completed, agentic AI and enterprise systems</p>
-          <ul>
-            <li>Designed and built NeoCortex, a memory platform for AI agents with persistent context and traceable reasoning.</li>
-            <li>Combined vector search, a Neo4j knowledge graph, PostgreSQL, LanceDB and LLM reasoning in one hybrid architecture.</li>
-            <li>Wrote Python/FastAPI services and tested retrieval, routing and contextual reasoning for agent workflows.</li>
-            <li>Evaluated how context is retrieved and used, to make generated answers more relevant and reliable.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <p class="when">June to Aug. 2025</p>
-        <div>
-          <h3>AI research intern, Talan Tunisia</h3>
-          <p class="state">Completed, credit scoring and explainable AI</p>
-          <ul>
-            <li>Built a credit scoring system with data preprocessing, risk prediction and a Gradio interface.</li>
-            <li>Implemented and compared SHAP, LIME, TokenSHAP, counterfactuals, LLM-as-a-judge and mechanistic interpretability.</li>
-            <li>Analyzed the fidelity, consistency and relevance of explanations to judge how far the model’s decisions can be trusted.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <p class="when">July to Aug. 2024</p>
-        <div>
-          <h3>AI research intern, Talan Tunisia</h3>
-          <p class="state">Completed, multimodal systems</p>
-          <ul><li>Added processing and interactive visualization components to a multimodal application and wrote its technical documentation.</li></ul>
-        </div>
-      </li>
-    </ol>
-  </section>
-
-  <section class="wrap" id="projects">
-    <h2>Projects</h2>
-    <article class="feature">
-      <div>
-        <h3>NeoCortex</h3>
-        <p>A memory platform for AI agents. It keeps context between sessions, records how an answer was reasoned, and retrieves across vectors, a knowledge graph and SQL tables so agents stay relevant and reliable. Built during my 2026 internship at Talan.</p>
+  <section class="container" id="experience">
+    <span class="label">Experience</span>
+    <h2 class="headline">Research first, then production.</h2>
+    <div class="grid">
+      <div class="card lg blue span2">
+        <span class="pill on">Ongoing research, Sept. 2026 to now</span>
+        <h3 style="margin-top:16px">AI researcher, cultural alignment of Fanar LLMs</h3>
+        <ul>
+          <li>Contributing to a scientific article: literature review and evaluation of Arabic-language models on ACVA, AraTrust, ArabicMMLU and EXAMS Arabic.</li>
+          <li>Building a reproducible Python workflow to diagnose alignment gaps, prepare preference pairs and apply DPO to a Fanar checkpoint.</li>
+          <li>Defining a before/after DPO protocol that tracks cultural alignment, general capability retention, and every configuration and dataset.</li>
+        </ul>
       </div>
-      <p class="stack">Python, FastAPI, Neo4j, PostgreSQL, LanceDB, LangGraph</p>
-    </article>
-    <ul class="rows">
-      <li>
-        <div><h3>Credit scoring with explainable AI</h3><p>A risk model with a Gradio interface, and a comparison of six ways to explain its decisions.</p></div>
-        <p class="stack">scikit-learn, SHAP, LIME</p>
-      </li>
-      <li>
-        <div><h3>Bank audit portal</h3><p>REST services with role-based access, logging and anomaly detection, packaged with Docker.</p></div>
-        <p class="stack">Django REST, Docker <a href="https://github.com/mhamedgarbaa/mybank-audit-system">Code</a></p>
-      </li>
-      <li>
-        <div><h3>ECG analysis pipeline</h3><p>Signal preprocessing, feature extraction and classification, served through a Flask app.</p></div>
-        <p class="stack">scikit-learn, Flask <a href="https://github.com/mhamedgarbaa/PFA_project_ECG_App">Code</a></p>
-      </li>
-      <li>
-        <div><h3>Driver distraction detection</h3><p>A real-time prototype that detects phone use and gaze drift from a camera feed.</p></div>
-        <p class="stack">OpenCV, MediaPipe, YOLOv8 <a href="https://github.com/mhamedgarbaa/systeme-de-detection-des-distractions">Code</a></p>
-      </li>
-      <li>
-        <div><h3>Multimodal RAG and VR chatbot</h3><p>A biology assistant that retrieves context and predicts 3D protein structures with SMfold.</p></div>
-        <p class="stack">RAG, SMfold, Unity</p>
-      </li>
-    </ul>
-    <p class="note">3rd place at the NASA Space Apps Challenge and at TomorrowLab (TPL / DAAD).</p>
-  </section>
-
-  <section class="wrap" id="skills">
-    <h2>Skills</h2>
-    <dl class="skills">
-      <dt>MLOps and research</dt><dd>MLflow, CI/CD, Jenkins, DPO, LLM evaluation, reproducibility</dd>
-      <dt>Back end and APIs</dt><dd>Python, FastAPI, Flask, Django REST, REST APIs, Java, testing</dd>
-      <dt>AI and machine learning</dt><dd>PyTorch, TensorFlow, scikit-learn, Pandas, NumPy, model evaluation</dd>
-      <dt>LLMs and agents</dt><dd>LangChain, LangGraph, RAG, vector search, language models</dd>
-      <dt>Data and infrastructure</dt><dd>PostgreSQL, MySQL, Neo4j, LanceDB, Linux, Bash, Docker, Git</dd>
-    </dl>
-  </section>
-
-  <section class="wrap" id="education">
-    <h2>Education and certifications</h2>
-    <div class="two">
-      <div>
-        <h3>Engineering degree in telecommunications, with honors</h3>
-        <p class="state">ENET’Com, Sfax, 2023 to 2026</p>
-        <p>Algorithms, machine learning, software development, databases and systems, after a preparatory cycle in mathematics and physics.</p>
-        <p class="note">Languages: Arabic (native), English (C1), French (B2, TCF-TP), German (A2). Leadership: president of TUNSA club, vice-president of training and development at JCI Korba.</p>
+      <div class="card">
+        <span class="pill green">Feb. to June 2026</span>
+        <h3 style="margin-top:16px">AI engineering intern, Talan Tunisia</h3>
+        <p>Agentic AI and enterprise systems. Built NeoCortex, a memory platform for AI agents, with FastAPI services on a hybrid vector, graph and SQL architecture, and evaluated how retrieved context affects answer reliability.</p>
       </div>
-      <ul class="certs">
-        <li>Microsoft Azure Fundamentals (AZ-900)</li>
-        <li>Microsoft Azure AI Fundamentals (AI-900)</li>
-        <li>Machine Learning in Production, DeepLearning.AI</li>
-        <li>Jenkins CI/CD, KodeKloud</li>
-        <li>MLOps Fundamentals, DataCamp</li>
-        <li>Supervised Learning with scikit-learn, DataCamp</li>
-      </ul>
+      <div class="card span2">
+        <span class="pill green">June to Aug. 2025</span>
+        <h3 style="margin-top:16px">AI research intern, Talan Tunisia</h3>
+        <p>Credit scoring and explainable AI. Built a scoring system with a Gradio interface, then implemented and compared SHAP, LIME, TokenSHAP, counterfactuals, LLM-as-a-judge and mechanistic interpretability, analyzing the fidelity, consistency and relevance of each explanation.</p>
+      </div>
+      <div class="card">
+        <span class="pill green">July to Aug. 2024</span>
+        <h3 style="margin-top:16px">AI research intern, Talan Tunisia</h3>
+        <p>Multimodal systems. Added processing and interactive visualization components to a multimodal application and wrote its technical documentation.</p>
+      </div>
     </div>
   </section>
 
-  <section class="wrap contact" id="contact">
-    <h2>Let’s talk</h2>
-    <p class="sub">I’m looking for MLOps and AI engineering roles, and research collaborations. Email is the quickest way to reach me.</p>
-    <a class="mail" href="mailto:mhamedgarbaa04@gmail.com">mhamedgarbaa04@gmail.com</a>
-    <p class="links"><a href="https://linkedin.com/in/mhamed-garbaa-646509223">LinkedIn</a> <a href="https://github.com/mhamedgarbaa">GitHub</a> <a href="CV_Mhamed_Garbaa.pdf" download>CV (PDF)</a></p>
+  <section class="container" id="projects">
+    <span class="label">Projects</span>
+    <h2 class="headline">Things I’ve built and shipped.</h2>
+    <div class="grid">
+      <div class="card lg tint span2">
+        <div class="icon-box ib-blue"><i class="fas fa-brain"></i></div>
+        <h3 style="font-size:24px">NeoCortex</h3>
+        <p style="font-size:15px">A memory platform for AI agents. It keeps context between sessions, records how an answer was reasoned, and retrieves across vectors, a knowledge graph and SQL tables so agents stay relevant and reliable. Built during my 2026 internship at Talan.</p>
+        <div class="pills"><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Neo4j</span><span class="pill">PostgreSQL</span><span class="pill">LanceDB</span><span class="pill">LangGraph</span></div>
+      </div>
+      <div class="card">
+        <div class="icon-box ib-green"><i class="fas fa-scale-balanced"></i></div>
+        <h3>Credit scoring with explainable AI</h3>
+        <p>A risk model with a Gradio interface, and a comparison of six ways to explain its decisions.</p>
+        <div class="pills"><span class="pill green">scikit-learn</span><span class="pill green">SHAP</span><span class="pill green">LIME</span></div>
+      </div>
+      <div class="card">
+        <div class="icon-box ib-red"><i class="fas fa-shield-halved"></i></div>
+        <h3>Bank audit portal</h3>
+        <p>REST services with role-based access, logging and anomaly detection, packaged with Docker.</p>
+        <div class="pills"><span class="pill gray">Django REST</span><span class="pill gray">Docker</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/mybank-audit-system">View code</a>
+      </div>
+      <div class="card">
+        <div class="icon-box ib-blue"><i class="fas fa-heart-pulse"></i></div>
+        <h3>ECG analysis pipeline</h3>
+        <p>Signal preprocessing, feature extraction and classification, served through a Flask app.</p>
+        <div class="pills"><span class="pill">scikit-learn</span><span class="pill">Flask</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/PFA_project_ECG_App">View code</a>
+      </div>
+      <div class="card">
+        <div class="icon-box ib-green"><i class="fas fa-car"></i></div>
+        <h3>Driver distraction detection</h3>
+        <p>A real-time prototype that detects phone use and gaze drift from a camera feed.</p>
+        <div class="pills"><span class="pill green">OpenCV</span><span class="pill green">MediaPipe</span><span class="pill green">YOLOv8</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/systeme-de-detection-des-distractions">View code</a>
+      </div>
+      <div class="card">
+        <div class="icon-box ib-red"><i class="fas fa-vr-cardboard"></i></div>
+        <h3>Multimodal RAG and VR chatbot</h3>
+        <p>A biology assistant that retrieves context and predicts 3D protein structures with SMfold.</p>
+        <div class="pills"><span class="pill gray">RAG</span><span class="pill gray">SMfold</span><span class="pill gray">Unity</span></div>
+      </div>
+      <div class="card dark span2">
+        <div class="icon-box" style="background:rgba(255,159,10,.15);color:#ff9f0a"><i class="fas fa-trophy"></i></div>
+        <h3>3rd place at NASA Space Apps Challenge and TomorrowLab</h3>
+        <p>Podium finishes at the NASA Space Apps Challenge and at TomorrowLab (TPL / DAAD), solving problems with AI and data science in a team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="skills">
+    <span class="label">Skills</span>
+    <h2 class="headline">The toolbox.</h2>
+    <div class="grid">
+      <div class="card lg dark span2">
+        <h3>MLOps and research</h3>
+        <p>Reproducible experiments, evaluation and automation.</p>
+        <div class="skills-list"><span class="pill">MLflow</span><span class="pill">CI/CD</span><span class="pill">Jenkins</span><span class="pill">DPO</span><span class="pill">LLM evaluation</span><span class="pill">Reproducibility</span></div>
+      </div>
+      <div class="card">
+        <h3>Back end and APIs</h3>
+        <div class="pills"><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Flask</span><span class="pill">Django REST</span><span class="pill">REST APIs</span><span class="pill">Java</span></div>
+      </div>
+      <div class="card">
+        <h3>AI and machine learning</h3>
+        <div class="pills"><span class="pill green">PyTorch</span><span class="pill green">TensorFlow</span><span class="pill green">scikit-learn</span><span class="pill green">Pandas</span><span class="pill green">NumPy</span></div>
+      </div>
+      <div class="card">
+        <h3>LLMs and agents</h3>
+        <div class="pills"><span class="pill gray">LangChain</span><span class="pill gray">LangGraph</span><span class="pill gray">RAG</span><span class="pill gray">Vector search</span></div>
+      </div>
+      <div class="card">
+        <h3>Data and infrastructure</h3>
+        <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Neo4j</span><span class="pill">LanceDB</span><span class="pill">Linux</span><span class="pill">Bash</span><span class="pill">Docker</span><span class="pill">Git</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="education">
+    <span class="label">Education</span>
+    <h2 class="headline">Degree, certifications and languages.</h2>
+    <div class="grid">
+      <div class="card lg">
+        <div class="icon-box ib-blue"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Engineering degree in telecommunications, with honors</h3>
+        <p>ENET’Com, Sfax, 2023 to 2026. Algorithms, machine learning, software development, databases and systems, after a preparatory cycle in mathematics and physics.</p>
+      </div>
+      <div class="card lg">
+        <div class="icon-box ib-green"><i class="fas fa-certificate"></i></div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Azure Fundamentals (AZ-900)</li>
+          <li>Azure AI Fundamentals (AI-900)</li>
+          <li>Machine Learning in Production, DeepLearning.AI</li>
+          <li>Jenkins CI/CD, KodeKloud</li>
+          <li>MLOps Fundamentals, DataCamp</li>
+          <li>Supervised Learning with scikit-learn, DataCamp</li>
+        </ul>
+      </div>
+      <div class="card lg">
+        <div class="icon-box ib-red"><i class="fas fa-language"></i></div>
+        <h3>Languages and leadership</h3>
+        <p>Arabic (native), English (C1), French (B2, TCF-TP), German (A2).</p>
+        <p style="margin-top:10px">President of the TUNSA club and vice-president of training and development at JCI Korba.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <div class="cta-section">
+      <div class="circle" style="width:280px;height:280px;top:-100px;right:-60px"></div>
+      <div class="circle" style="width:160px;height:160px;bottom:-70px;left:40px"></div>
+      <div class="cta-in">
+        <span class="label" style="color:rgba(255,255,255,.7)">Open to MLOps and AI engineering roles</span>
+        <h2>Let’s build something reliable.</h2>
+        <p>Email is the quickest way to reach me. I’m also open to research collaborations.</p>
+        <div class="cta">
+          <a href="mailto:mhamedgarbaa04@gmail.com" class="btn btn-white"><i class="fas fa-envelope" style="color:var(--accent)"></i>mhamedgarbaa04@gmail.com</a>
+          <a href="https://linkedin.com/in/mhamed-garbaa-646509223" class="btn btn-line"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
-<footer class="wrap foot">© 2026 Mhamed Garbaa. Based in Tunisia.</footer>
+
+<footer class="footer">
+  <div class="container">
+    <span><strong>Mhamed Garbaa</strong> &nbsp;© 2026, based in Tunisia</span>
+    <span><a href="https://github.com/mhamedgarbaa">GitHub</a><a href="https://linkedin.com/in/mhamed-garbaa-646509223">LinkedIn</a><a href="CV_Mhamed_Garbaa.pdf" download>CV</a></span>
+  </div>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
