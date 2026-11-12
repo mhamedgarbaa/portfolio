@@ -12,21 +12,26 @@
 <meta property="og:url" content="https://mhamedgarbaa.github.io/portfolio/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230071e3'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238b5cf6'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Mhamed Garbaa","jobTitle":"AI & MLOps Engineer","url":"https://mhamedgarbaa.github.io/portfolio/","sameAs":["https://linkedin.com/in/mhamed-garbaa-646509223","https://github.com/mhamedgarbaa"],"address":{"@type":"PostalAddress","addressCountry":"Tunisia"}}
 </script>
 </head>
 <body>
+<script>document.documentElement.classList.add("js")</script>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+<div class="glow" id="glow"></div>
+<div class="progress" id="progress"></div>
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="#" class="brand">Mhamed Garbaa</a>
+    <a href="#" class="brand">Mhamed<span>.</span>Garbaa</a>
     <div class="nav-links">
       <a href="#pipeline" class="nav-pill">Pipeline</a>
       <a href="#experience" class="nav-pill">Experience</a>
@@ -41,23 +46,31 @@
 <main>
   <section class="container hero">
     <div>
-      <span class="label fade-up">AI &amp; MLOps engineer</span>
-      <h1 class="fade-up d2">I take language models from experiment to a service you can rerun and trust.</h1>
+      <span class="status fade-up"><i></i>Open to MLOps &amp; AI engineering roles</span>
+      <h1 class="fade-up d2">I take language models from <span class="grad-text">experiment</span> to a service you can rerun and trust.</h1>
+      <div class="typed fade-up d3" id="typed" aria-hidden="true"></div>
       <p class="lede fade-up d3">Telecommunications Engineer graduated with honors, specializing in Artificial Intelligence, Machine Learning, and MLOps. Experienced in developing predictive ML models, Python/FastAPI services, and LLM-based applications, with a strong focus on data processing, model evaluation, explainability, and reproducible AI workflows.</p>
-      <div class="cta fade-up d3">
-        <a href="CV_Mhamed_Garbaa.pdf" class="btn btn-blue" download><i class="fas fa-download" style="font-size:13px"></i>Download CV</a>
-        <a href="https://github.com/mhamedgarbaa" class="btn btn-white"><i class="fab fa-github" style="color:var(--muted)"></i>GitHub</a>
+      <div class="cta fade-up d4">
+        <a href="CV_Mhamed_Garbaa.pdf" class="btn btn-blue magnetic" download><i class="fas fa-download" style="font-size:13px"></i>Download CV</a>
+        <a href="https://github.com/mhamedgarbaa" class="btn btn-white magnetic"><i class="fab fa-github"></i>GitHub</a>
+        <a href="#projects" class="btn btn-white magnetic">See projects</a>
       </div>
     </div>
-    <img class="photo fade-up d2" src="DSC05764.jpg" alt="Portrait of Mhamed Garbaa" width="640" height="800" fetchpriority="high">
+    <div class="photo-wrap fade-up d2" id="tilt">
+      <img class="photo" src="DSC05764.jpg" alt="Portrait of Mhamed Garbaa" width="640" height="800" fetchpriority="high">
+      <span class="chip c1"><i class="fas fa-brain"></i>LLM alignment</span>
+      <span class="chip c2"><i class="fas fa-diagram-project"></i>Agent memory</span>
+      <span class="chip c3"><i class="fas fa-gears"></i>MLOps</span>
+    </div>
+    <div class="scroll-hint">SCROLL</div>
   </section>
 
   <div class="container">
     <div class="stats">
-      <div class="stat"><b style="color:var(--accent)">3</b><span>Research internships</span></div>
-      <div class="stat"><b style="color:var(--green)">6</b><span>Certifications</span></div>
-      <div class="stat"><b>4</b><span>Languages spoken</span></div>
-      <div class="stat"><b style="color:var(--red)">2</b><span>Third-place awards</span></div>
+      <div class="stat rv"><b data-count="3">3</b><span>Research internships</span></div>
+      <div class="stat rv"><b data-count="6">6</b><span>Certifications</span></div>
+      <div class="stat rv"><b data-count="4">4</b><span>Languages spoken</span></div>
+      <div class="stat rv"><b data-count="2">2</b><span>Third-place awards</span></div>
     </div>
   </div>
 
@@ -69,8 +82,8 @@
 
   <section class="container" id="pipeline">
     <span class="label">How I work</span>
-    <h2 class="headline">Across the whole ML lifecycle.</h2>
-    <div class="card lg tint">
+    <h2 class="headline rv">Across the whole ML lifecycle.</h2>
+    <div class="card rv lg tint">
       <p style="margin-bottom:8px">Select a stage to see what I’ve done there. I’m focused on evaluation right now.</p>
       <div class="track" role="tablist" aria-label="ML lifecycle stages">
         <button role="tab" class="stage" data-title="Data" data-tools="Pandas, NumPy, PostgreSQL, Neo4j, LanceDB" data-text="Signal preprocessing and feature extraction for ECG classification, data preparation for a credit risk model, and a hybrid store of vectors, a knowledge graph and SQL tables behind the NeoCortex agent memory.">Data</button>
@@ -97,9 +110,9 @@
 
   <section class="container" id="experience">
     <span class="label">Experience</span>
-    <h2 class="headline">Research first, then production.</h2>
+    <h2 class="headline rv">Research first, then production.</h2>
     <div class="grid">
-      <div class="card lg blue span2">
+      <div class="card rv lg blue span2">
         <span class="pill on">Ongoing research, Sept. 2026 to now</span>
         <h3 style="margin-top:16px">AI Researcher — LLM Alignment & Evaluation</h3>
         <ul>
@@ -108,17 +121,17 @@
          <li>Designing experimental protocols to assess model alignment, performance, and reliability, with a focus on reproducibility and rigorous evaluation.</li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card rv">
         <span class="pill green">Feb. to June 2026</span>
         <h3 style="margin-top:16px">AI engineering intern, Talan Tunisia</h3>
         <p>Agentic AI and enterprise systems. Built NeoCortex, a memory platform for AI agents, with FastAPI services on a hybrid vector, graph and SQL architecture, and evaluated how retrieved context affects answer reliability.</p>
       </div>
-      <div class="card span2">
+      <div class="card rv span2">
         <span class="pill green">June to Aug. 2025</span>
         <h3 style="margin-top:16px">AI research intern, Talan Tunisia</h3>
         <p>Credit scoring and explainable AI. Built a scoring system with a Gradio interface, then implemented and compared SHAP, LIME, TokenSHAP, counterfactuals, LLM-as-a-judge and mechanistic interpretability, analyzing the fidelity, consistency and relevance of each explanation.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
         <span class="pill green">July to Aug. 2024</span>
         <h3 style="margin-top:16px">AI research intern, Talan Tunisia</h3>
         <p>Multimodal systems. Added processing and interactive visualization components to a multimodal application and wrote its technical documentation.</p>
@@ -128,48 +141,74 @@
 
   <section class="container" id="projects">
     <span class="label">Projects</span>
-    <h2 class="headline">Things I’ve built and shipped.</h2>
+    <h2 class="headline rv">Things I’ve built and shipped.</h2>
     <div class="grid">
-      <div class="card lg tint span2">
+      <div class="card rv lg tint span2">
         <div class="icon-box ib-blue"><i class="fas fa-brain"></i></div>
         <h3 style="font-size:24px">NeoCortex</h3>
         <p style="font-size:15px">A memory platform for AI agents. It keeps context between sessions, records how an answer was reasoned, and retrieves across vectors, a knowledge graph and SQL tables so agents stay relevant and reliable. Built during my 2026 internship at Talan.</p>
         <div class="pills"><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Neo4j</span><span class="pill">PostgreSQL</span><span class="pill">LanceDB</span><span class="pill">LangGraph</span></div>
       </div>
-      <div class="card">
+
+      <div class="card rv">
+        <span class="tag">New</span>
+        <div class="icon-box ib-violet"><i class="fas fa-tower-broadcast"></i></div>
+        <h3>Real-time market anomaly detection</h3>
+        <p>A production-style big data pipeline: Kafka ingests stock and crypto ticks, Spark Structured Streaming computes 5-minute windows and z-score alerts for price spikes, volume surges and volatility bursts. Airflow self-heals the pipeline and Grafana shows the results.</p>
+        <div class="pills"><span class="pill">Kafka</span><span class="pill">Spark</span><span class="pill">Airflow</span><span class="pill">Grafana</span><span class="pill">Docker</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/Real-Time-Financial-Market-Anomaly-Detection-Platform">View code</a>
+      </div>
+      <div class="card rv">
+        <span class="tag">New</span>
+        <div class="icon-box ib-blue"><i class="fas fa-sitemap"></i></div>
+        <h3>Ontology Agent</h3>
+        <p>A LangGraph pipeline that reads PDF, DOCX, CSV and JSON files and writes a valid OWL 2 ontology. Concepts are extracted in parallel, built from competency questions, repaired by the LLM, then checked with OWL-RL reasoning and two evaluation systems. 69 unit tests.</p>
+        <div class="pills"><span class="pill">LangGraph</span><span class="pill">OWL / RDF</span><span class="pill">DeepEval</span><span class="pill">Azure AI Foundry</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/Ontology_agent">View code</a>
+      </div>
+      <div class="card rv">
+        <span class="tag">New</span>
+        <div class="icon-box ib-green"><i class="fas fa-network-wired"></i></div>
+        <h3>Graph memory service over MCP</h3>
+        <p>A Dockerized memory layer for AI agents on the Model Context Protocol. It classifies documents into typed datasets, versions duplicates over time and offers 14 search strategies across a Neo4j graph, Postgres and LanceDB.</p>
+        <div class="pills"><span class="pill gray">MCP</span><span class="pill gray">Neo4j</span><span class="pill gray">FastAPI</span><span class="pill gray">LanceDB</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/-AI-memory-layer">View code</a>
+      </div>
+      <div class="card rv">
         <div class="icon-box ib-green"><i class="fas fa-scale-balanced"></i></div>
         <h3>Credit scoring with explainable AI</h3>
-        <p>A risk model with a Gradio interface, and a comparison of six ways to explain its decisions.</p>
-        <div class="pills"><span class="pill green">scikit-learn</span><span class="pill green">SHAP</span><span class="pill green">LIME</span></div>
+        <p>A 300 to 850 scoring tool with a Gradio interface: a financial model scores, TokenSHAP explains, AlignRAG checks policy alignment and a judge model recommends. Compared six ways to explain decisions.</p>
+        <div class="pills"><span class="pill green">TokenSHAP</span><span class="pill green">SHAP</span><span class="pill green">LIME</span><span class="pill green">RAG</span></div>
+        <a class="more" href="https://github.com/mhamedgarbaa/credit-assessment-system">View code</a>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="icon-box ib-red"><i class="fas fa-shield-halved"></i></div>
         <h3>Bank audit portal</h3>
         <p>REST services with role-based access, logging and anomaly detection, packaged with Docker.</p>
         <div class="pills"><span class="pill gray">Django REST</span><span class="pill gray">Docker</span></div>
         <a class="more" href="https://github.com/mhamedgarbaa/mybank-audit-system">View code</a>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="icon-box ib-blue"><i class="fas fa-heart-pulse"></i></div>
         <h3>ECG analysis pipeline</h3>
         <p>Signal preprocessing, feature extraction and classification, served through a Flask app.</p>
         <div class="pills"><span class="pill">scikit-learn</span><span class="pill">Flask</span></div>
-        <a class="more" href="https://github.com/mhamedgarbaa/PFA_project_ECG_App">View code</a>
+        <a class="more" href="https://github.com/mhamedgarbaa/ECG_anomaly-detection-App">View code</a>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="icon-box ib-green"><i class="fas fa-car"></i></div>
         <h3>Driver distraction detection</h3>
         <p>A real-time prototype that detects phone use and gaze drift from a camera feed.</p>
         <div class="pills"><span class="pill green">OpenCV</span><span class="pill green">MediaPipe</span><span class="pill green">YOLOv8</span></div>
-        <a class="more" href="https://github.com/mhamedgarbaa/systeme-de-detection-des-distractions">View code</a>
+        <a class="more" href="https://github.com/mhamedgarbaa/distraction-detection-system">View code</a>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="icon-box ib-red"><i class="fas fa-vr-cardboard"></i></div>
         <h3>Multimodal RAG and VR chatbot</h3>
         <p>A biology assistant that retrieves context and predicts 3D protein structures with SMfold.</p>
         <div class="pills"><span class="pill gray">RAG</span><span class="pill gray">SMfold</span><span class="pill gray">Unity</span></div>
       </div>
-      <div class="card dark span2">
+      <div class="card rv dark span2">
         <div class="icon-box" style="background:rgba(255,159,10,.15);color:#ff9f0a"><i class="fas fa-trophy"></i></div>
         <h3>3rd place at NASA Space Apps Challenge and TomorrowLab</h3>
         <p>Podium finishes at the NASA Space Apps Challenge and at TomorrowLab (TPL / DAAD), solving problems with AI and data science in a team.</p>
@@ -179,26 +218,26 @@
 
   <section class="container" id="skills">
     <span class="label">Skills</span>
-    <h2 class="headline">The toolbox.</h2>
+    <h2 class="headline rv">The toolbox.</h2>
     <div class="grid">
-      <div class="card lg dark span2">
+      <div class="card rv lg dark span2">
         <h3>MLOps and research</h3>
         <p>Reproducible experiments, evaluation and automation.</p>
         <div class="skills-list"><span class="pill">MLflow</span><span class="pill">CI/CD</span><span class="pill">Jenkins</span><span class="pill">DPO</span><span class="pill">LLM evaluation</span><span class="pill">Reproducibility</span></div>
       </div>
-      <div class="card">
+      <div class="card rv">
         <h3>Back end and APIs</h3>
         <div class="pills"><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Flask</span><span class="pill">Django REST</span><span class="pill">REST APIs</span><span class="pill">Java</span></div>
       </div>
-      <div class="card">
+      <div class="card rv">
         <h3>AI and machine learning</h3>
         <div class="pills"><span class="pill green">PyTorch</span><span class="pill green">TensorFlow</span><span class="pill green">scikit-learn</span><span class="pill green">Pandas</span><span class="pill green">NumPy</span></div>
       </div>
-      <div class="card">
+      <div class="card rv">
         <h3>LLMs and agents</h3>
         <div class="pills"><span class="pill gray">LangChain</span><span class="pill gray">LangGraph</span><span class="pill gray">RAG</span><span class="pill gray">Vector search</span></div>
       </div>
-      <div class="card">
+      <div class="card rv">
         <h3>Data and infrastructure</h3>
         <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Neo4j</span><span class="pill">LanceDB</span><span class="pill">Linux</span><span class="pill">Bash</span><span class="pill">Docker</span><span class="pill">Git</span></div>
       </div>
@@ -207,14 +246,14 @@
 
   <section class="container" id="education">
     <span class="label">Education</span>
-    <h2 class="headline">Degree, certifications and languages.</h2>
+    <h2 class="headline rv">Degree, certifications and languages.</h2>
     <div class="grid">
-      <div class="card lg">
+      <div class="card rv lg">
         <div class="icon-box ib-blue"><i class="fas fa-graduation-cap"></i></div>
         <h3>Engineering degree in telecommunications, with honors</h3>
         <p>ENET’Com, Sfax, 2023 to 2026. Algorithms, machine learning, software development, databases and systems, after a preparatory cycle in mathematics and physics.</p>
       </div>
-      <div class="card lg">
+      <div class="card rv lg">
         <div class="icon-box ib-green"><i class="fas fa-certificate"></i></div>
         <h3>Certifications</h3>
         <ul>
@@ -226,7 +265,7 @@
           <li>Supervised Learning with scikit-learn, DataCamp</li>
         </ul>
       </div>
-      <div class="card lg">
+      <div class="card rv lg">
         <div class="icon-box ib-red"><i class="fas fa-language"></i></div>
         <h3>Languages and leadership</h3>
         <p>Arabic (native), English (C1), French (B2, TCF-TP), German (A2).</p>
@@ -236,7 +275,7 @@
   </section>
 
   <section class="container" id="contact">
-    <div class="cta-section">
+    <div class="cta-section rv">
       <div class="circle" style="width:280px;height:280px;top:-100px;right:-60px"></div>
       <div class="circle" style="width:160px;height:160px;bottom:-70px;left:40px"></div>
       <div class="cta-in">
@@ -259,6 +298,10 @@
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js?v=3"></script>
+<script src="scene.js?v=3"></script>
 </body>
 </html>
